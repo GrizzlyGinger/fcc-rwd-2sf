@@ -4,7 +4,6 @@ header {
 }
 
 h2 {
-  
   font-size: 17px;
 }
 
@@ -12,6 +11,7 @@ body {
   font-family: Calibri;
 }
 
+/* Copied from FCC: Survey Form example by @lasjorg*/
 body::before {
   content:'';
   position:fixed;
@@ -29,6 +29,7 @@ body::before {
   background-repeat: no-repeat;
   background-position: center;
 }
+/* Copied from FCC: Survey Form example by @lasjorg*/
 
 label, p {
   display: flex;
@@ -37,21 +38,10 @@ label, p {
 }
 
 .container {
-  width: 100%;
-  margin: 3.125rem auto 0 auto;
+  width: 75%;
+  margin: 40px auto 0 auto;
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 500px;
-  }
-}
 
 #survey-form {
   background-color: rgb(69, 69, 69, 0.8);
