@@ -49,10 +49,11 @@ label, p {
   border-radius: 10px;
 }
 
-@media (min-width: 480) {
-  form{
+@media (min-width: 390) {
+  .survey-form {
     margin: 0 auto 30px auto;
     padding 15px;
+    min-width: 292px;
   }
 }
 
