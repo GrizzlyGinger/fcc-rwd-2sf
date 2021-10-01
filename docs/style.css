@@ -3,10 +3,6 @@ header {
   text-align: center;
 }
 
-h2 {
-  font-size: 17px;
-}
-
 body {
   font-family: Calibri;
 }
@@ -22,8 +18,8 @@ body::before {
   z-index: -1;
   background-image: linear-gradient(
   90deg,
-      rgba(58, 58, 158, 0.8),
-      rgba(136, 136, 206, 0.7)
+      rgb(56, 81, 112, 0.7),
+      rgb(159, 210, 198, 0.8)
   ), url(https://eagleoutside.com/wp-content/uploads/2015/06/fairgrounds-disc-golf-course.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,20 +27,38 @@ body::before {
 }
 /* Copied from FCC: Survey Form example by @lasjorg*/
 
-label, p {
+label, p, h2 {
   display: flex;
   align-items: center;
+  font-family: sans-serif;
+  line-height: 1.4;
+  color: rgb(159, 210, 198);
+}
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h2 {
+  line-height: 1;
+  margin: 5px 0 5px 0;
+}
+
+#description {
+  justify-content: center;
   color: white;
 }
 
 .container {
   width: 75%;
-  margin: 40px auto 0 auto;
+  max-width: 600px;
+  min-width: 400px;
+  margin: 40px auto 0 auto
 }
 
-
 #survey-form {
-  background-color: rgb(69, 69, 69, 0.8);
+  background-color: rgb(20, 45, 77, 0.8);
   padding: 30px 25px;
   border-radius: 10px;
 }
@@ -57,18 +71,39 @@ label, p {
   }
 }
 
-.form-factors {
+
+.form-fields {
   width: 100%;
   border-radius: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  max-width: 50%;
 }
 
-.input-textarea {
-  width: 100%;
+#dropdown {
+  max-width: 24ch;
+}
+
+.comment-and-submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comment-and-submit > h2 {
+  text-align: center;
+
+}
+
+.comment-box {
+  width: 75%;
   height: 125px;
   border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 .submit-button {
-  width: 101%;
+  min-width: 6ch;
+  width: 150px;
+  border-radius: 8px;
+  background-color: rgb(159, 210, 198);
 }

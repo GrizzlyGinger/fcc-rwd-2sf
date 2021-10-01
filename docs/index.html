@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - FCC - Survey Form</title>
+  <title>FCC Responsive Web Design Project - Survey Form</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -17,46 +17,46 @@
   </header>
   <div class="survey">
     <form id="survey-form">
-      <div>
-        <label id="name-label" for="name">Name</label>
+      <div class="name">
+        <label id="name-label" for="name"><h2>Name</h2></label>
         <input
                type="text"
                name="name"
                id="name"
-               class="form-factors"
+               class="form-fields"
                placeholder="Please enter your name"
                required
          />
       </div>
 
-      <div>
-        <label id="email-label" for="email">Email</label>
+      <div class="email">
+        <label id="email-label" for="email"><h2>Email</h2></label>
         <input
                type="email"
                name="email"
                id="email"
-               class="form-factors"
+               class="form-fields"
                placeholder="Please enter your email"
                required
         />
       </div>
 
-      <div>
-        <label id="number-label" for="number">PDGA Number</label>
+      <div class="pdga">
+        <label id="number-label" for="number"><h2>PDGA Number</h2></label>
         <input
                type="number"
                name="numfield"
                id="number"
                min="8"
                max="120"
-               class="form-factors"
+               class="form-fields"
                placeholder="Please enter your PDGA Number"
         />
       </div>
 
-      <div>
-        <p>How many tournaments have you played?</p>
-        <select id="dropdown" class="form-factors" name required>
+      <div "no-of-tournaments">
+        <h2>How many tournaments have you played?</h2>
+        <select id="dropdown" class="form-fields" name required>
           <option disabled selected value>Make a selection</option>
           <option value="first-tournament">This was my first tournament</option>
           <option value="one-to-five">1-5</option>
@@ -65,8 +65,8 @@
         </select>
       </div>
 
-      <div>
-        <p>What division did you play?</p>
+      <div class="division">
+        <h2>What division did you play?</h2>
         <label>
           <input
                  name="radio-choices"
@@ -147,8 +147,8 @@
           </label>
       </div>
 
-      <div>
-        <p>What would you like to see improved?</p>
+      <div class="improved">
+        <h2>What would you like to see improved?</h2>
         <label>
           <input
                  name="checkboxes"
@@ -180,19 +180,16 @@
       </div>
 
 
-    <div>
-      <p>Please let us know any other thoughts/comments you have about your tournament experience:</p>
+    <div class="comment-and-submit">
+      <h2>Please let us know any other thoughts/comments you have about your tournament experience:</h2>
       <textarea
                 id="feedback"
-                class="input-textarea"
+                class="comment-box"
                 name="feedback"
                 placeholder="Enter your comments here..."
                 text-color: black;
                 >
       </textarea>
-    </div>
-
-    <div>
       <button type="submit" id="submit" class="submit-button">
         Submit
       </button>
