@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="initial-scale=1.0, width=device-width" />
   <title>FCC Responsive Web Design Project - Survey Form</title>
   <link rel="stylesheet" href="./style.css">
-
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -17,44 +16,43 @@
   </header>
   <div class="survey">
     <form id="survey-form">
-      <div class="name">
-        <h2><label id="name-label" for="name">Name</label></h2>
-        <input
-               type="text"
-               name="name"
-               id="name"
-               class="form-fields"
-               placeholder="Please enter your preferred name"
-               required
-         />
+      <div class="section">
+        <div>
+          <h2><label id="name-label" for="name">Name</label></h2>
+          <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-fields"
+          placeholder="Please enter your preferred name"
+          required
+          />
+        </div>
+        <div>
+          <h2><label id="email-label" for="email">Email</label></h2>
+          <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-fields"
+          placeholder="Please enter a valid email address"
+          required
+          />
+        </div>
+        <div>
+          <h2><label id="number-label" for="number">PDGA Number</label></h2>
+          <input
+          type="number"
+          name="numfield"
+          id="number"
+          min="1"
+          max="1000000"
+          class="form-fields"
+          placeholder="Please enter your PDGA Number"
+          />
+        </div>
       </div>
-
-      <div class="email">
-        <h2><label id="email-label" for="email">Email</label></h2>
-        <input
-               type="email"
-               name="email"
-               id="email"
-               class="form-fields"
-               placeholder="Please enter a valid email address"
-               required
-        />
-      </div>
-
-      <div class="pdga">
-        <h2><label id="number-label" for="number">PDGA Number</label></h2>
-        <input
-               type="number"
-               name="numfield"
-               id="number"
-               min="1"
-               max="1000000"
-               class="form-fields"
-               placeholder="Please enter your PDGA Number"
-        />
-      </div>
-
-      <div class="no-of-tournaments">
+      <div id="no-of-tournaments" class="section">
         <h2>How many tournaments have you played?</h2>
         <select id="dropdown" class="form-fields" name="no-of-tournaments" required>
           <option disabled selected value>Make a selection</option>
@@ -64,8 +62,7 @@
           <option value="ten-or-more">10+</option>
         </select>
       </div>
-
-      <div class="division">
+      <div id="division" class="section">
         <h2>What division did you play?</h2>
         <label>
           <input
@@ -147,7 +144,7 @@
           </label>
       </div>
 
-      <div class="improved">
+      <div id="improved" class="section">
         <h2>What would you like to see improved?</h2>
         <label>
           <input
@@ -178,7 +175,7 @@
                  />More diverse division offerings
         </label>
       </div>
-    <div class="comment-and-submit">
+    <div id="comment-and-submit" class="section">
       <h2>Please let us know any other thoughts/comments you have about your tournament experience:</h2>
       <textarea
                 id="feedback"
@@ -186,9 +183,7 @@
                 name="feedback"
                 placeholder="Enter any comments or feedback here"
                 ></textarea>
-      <button type="submit" id="submit" class="submit-button">
-        Submit
-      </button>
+      <button type="submit" id="submit" class="submit-button">Submit</button>
     </div>
   </form>
 </div>
