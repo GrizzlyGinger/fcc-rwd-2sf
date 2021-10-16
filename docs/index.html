@@ -18,31 +18,31 @@
   <div class="survey">
     <form id="survey-form">
       <div class="name">
-        <label id="name-label" for="name"><h2>Name</h2></label>
+        <h2><label id="name-label" for="name">Name</label></h2>
         <input
                type="text"
                name="name"
                id="name"
                class="form-fields"
-               placeholder="Please enter your name"
+               placeholder="Please enter your preferred name"
                required
          />
       </div>
 
       <div class="email">
-        <label id="email-label" for="email"><h2>Email</h2></label>
+        <h2><label id="email-label" for="email">Email</label></h2>
         <input
                type="email"
                name="email"
                id="email"
                class="form-fields"
-               placeholder="Please enter your email"
+               placeholder="Please enter a valid email address"
                required
         />
       </div>
 
       <div class="pdga">
-        <label id="number-label" for="number"><h2>PDGA Number</h2></label>
+        <h2><label id="number-label" for="number">PDGA Number</label></h2>
         <input
                type="number"
                name="numfield"
@@ -56,7 +56,7 @@
 
       <div class="no-of-tournaments">
         <h2>How many tournaments have you played?</h2>
-        <select id="dropdown" class="form-fields" name required>
+        <select id="dropdown" class="form-fields" name="no-of-tournaments" required>
           <option disabled selected value>Make a selection</option>
           <option value="first-tournament">This was my first tournament</option>
           <option value="one-to-five">1-5</option>
@@ -136,14 +136,14 @@
                  name="radio-choices"
                  type="radio"
                  value="MJ18"
-                 >MJ18 - Junior <18 Mixed
+                 >MJ18 - Junior &lt;18 Mixed
           </label>
           <label>
           <input
                  name="radio-choices"
                  type="radio"
                  value="FJ18"
-                 >FJ18 - Junior <18 Women
+                 >FJ18 - Junior &lt;18 Women
           </label>
       </div>
 
@@ -178,16 +178,13 @@
                  />More diverse division offerings
         </label>
       </div>
-
-
     <div class="comment-and-submit">
       <h2>Please let us know any other thoughts/comments you have about your tournament experience:</h2>
       <textarea
                 id="feedback"
                 class="comment-box"
                 name="feedback"
-                placeholder="Enter your comments here..."
-                text-color: black;
+                placeholder="Enter any comments or feedback here"
                 ></textarea>
       <button type="submit" id="submit" class="submit-button">
         Submit
